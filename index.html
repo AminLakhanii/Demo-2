@@ -6,7 +6,23 @@
     <title>Document</title>
 </head>
 <body>
+    
     <h1>Hello World!</h1>
-    <div> what up y'all</div>
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    <h3>Click the light bulb to turn on/off the light.</h3>
+
+    <script>
+        function changeImage() {
+          var image = document.getElementById('myImage');
+          if (image.src.match("bulbon")) {
+            image.src = "pic_bulboff.gif";
+          } else {
+            image.src = "pic_bulbon.gif";
+          }
+        }
+        </script>
+        <br>
+    <div> how cool, isnt it?</div>
+    
 </body>
 </html>
